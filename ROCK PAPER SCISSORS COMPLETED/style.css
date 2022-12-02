@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(70, 138, 155);
+    flex-direction: column;
+}
+h1,p,button{
+  font-family: 'Klee One', cursive;  
+}
+
+span{
+    font-family: 'Nerko One', cursive;
+    font-size: 1rem;
+}
+
+.game{
+   
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: orchid;
+    border: none;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgb(184, 201, 199);
+    padding: 2rem;
+    border-radius: 20px;
+    
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: all 500ms ease-in-out;
+}
+
+.options{
+    display: flex;
+    gap: 1rem;
+}
+.result{
+    font-size: 2rem;
+}
+.user-choice,
+.computer-choice{
+    font-size: 20px;
+}
