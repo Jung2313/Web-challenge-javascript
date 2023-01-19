@@ -48,3 +48,61 @@ transform-origin: center bottom;
         bottom:50%;
         left: 49.1%;
 }
+
+@media(max-width:490px){
+    .clock{
+        min-width: 28rem;
+    }
+    .seconds{
+        height: 13rem;
+    }
+    .minutes{
+        height: 12rem;
+    }
+    .hours{
+        height: 8rem;
+    }
+}
+@media(max-width:450px){
+    .clock{
+        min-width: 26rem;
+    }
+    .seconds{
+        height: 12rem;
+    }
+    .minutes{
+        height: 11rem;
+    }
+    .hours{
+        height: 7rem;
+    }
+}
+@media(max-width:430px){
+    .clock{
+        min-width: 24rem;
+    }
+    .seconds{
+        height: 11rem;
+    }
+    .minutes{
+        height: 10rem;
+    }
+    .hours{
+        height: 6rem;
+    }
+}
+
+@media(max-width:390px){
+    .clock{
+        min-width: 22rem;
+    }
+    .seconds{
+        height: 10rem;
+    }
+    .minutes{
+        height: 9rem;
+    }
+    .hours{
+        height: 5rem;
+    }
+}
