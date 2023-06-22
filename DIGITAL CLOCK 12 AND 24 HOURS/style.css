@@ -1,0 +1,170 @@
+/*Reset*/
+
+/* Box sizing */
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+/* Reset margins */
+body,h1,h2,h3,h4,h5,p,figure,picture {
+    margin: 0; 
+}
+h1,h2,h3,h4,h5,h6,p {
+    font-weight: 100;
+}
+/* make images easier to work with */
+img,picture {
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,button,textarea,select {
+    font: inherit;
+}
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+    color: unset;
+}
+
+:root{
+    --font-familyBlackTitle: 'Black Ops One', cursive;
+    --font-familyVtime: 'VT323', monospace;
+    --backgroundGreen:rgb(23, 151, 134);
+}
+
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff; 
+    flex-direction: column;
+}
+.container{
+    background-color:var(--backgroundGreen);
+    padding:2rem;
+    border-radius: 1rem;
+    width: 23rem;
+    position: relative;
+}
+.container::before,
+.container::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    background-color:var(--backgroundGreen);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    height: 10px;
+    bottom: -10px;
+}
+.container::before{
+    left: 50px;
+}
+.container::after{
+    right: 50px;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: #000;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+   
+}
+.clock{
+    position: relative;
+}
+ small{
+    font-family: var(--font-familyVtime);
+    position: absolute;
+    left:103%;
+    top:40%;
+    font-size: 1.3rem;
+ }
+
+
+.time{
+    font-family: var(--font-familyBlackTitle);
+    text-align: center;
+    font-size: 2rem;
+}
+.switch{
+    font-family: var(--font-familyVtime);
+    transform: translateY(-10px);
+}
+.switch-content{
+    position: relative;
+    background-color: #fff;
+    height: 1.3rem;
+    border-radius: 10px;
+    outline: 1px solid black;
+    cursor: pointer;
+    
+}
+.switch-content::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    background-color: var(--backgroundGreen);
+    box-shadow: 0 0 0 20px 10px rgba(0,0,0,0.5);
+    outline: 1px solid black;
+    transition: all 500ms ease;
+
+}
+
+.switch-content.switchFormat::before{
+    left:calc(100% - 20px - 1px)
+}
+
+.switch-content,
+.format-day{
+    width: 4rem;
+}
+.format-day{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(min-width:500px){
+    .container{
+        width: 30rem;
+    }
+}
+h1{
+    color: var(--backgroundGreen);
+    margin-bottom: 2rem;
+    font-family: var(--font-familyVtime);
+    font-size: 3rem;
+}
