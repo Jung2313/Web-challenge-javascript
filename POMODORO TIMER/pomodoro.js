@@ -62,7 +62,8 @@ cancel.addEventListener("click", () => {
 
 function restartOption() {
     numberIncrease=10
-    timerMinutes.innerHTML= numberIncrease
+    timeLeft = numberIncrease * 60
+    timerMinutes.innerHTML=numberIncrease
     time.innerHTML= numberIncrease
     timewrap.style.display = "block";
     btnStartPomoModal.style.display = "block"
