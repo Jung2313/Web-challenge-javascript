@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Pomodoro Timer</h1>
+    <main class="container">
+        <div class="time-wrap">
+            <div class="timer-choose">
+                <div class="div-time">
+                    <span class="time">10</span>
+                </div>
+                <div class="in-decre">
+                    <button class="increase"><i class="fa-solid fa-caret-up"></i></button>
+                    <button class="decrease"><i class="fa-solid fa-caret-down"></i></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="timer-rotate">
+            <span class="time-final-minutes">10</span><span class="dot">:</span><span class="second">00</span>
+        </div>
+        <!--Start Pomodoro-->
+        <div class="btn-start-pomo">
+            <button class="start-timer">Start</button>
+        </div>
+        <!--cancel -->
+        <div class="btn-cancel-pom">
+            <button class="cancel-pomo">Cancel</button>
+            <button class="restart-pomo">Restart</button>
+        </div>
+    </main>
+    <script src="pomodoro.js"></script>
+</body>
+
+</html>

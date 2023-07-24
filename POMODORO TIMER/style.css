@@ -1,0 +1,128 @@
+/*Reset*/
+
+/* Box sizing */
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+/* Reset margins */
+body,h1,h2,h3,h4,h5,p,figure,picture {
+    margin: 0; 
+}
+h1,h2,h3,h4,h5,h6,p {
+    font-weight: 100;
+}
+/* make images easier to work with */
+img,picture {
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,button,textarea,select {
+    font: inherit;
+}
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+    color: unset;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding: 2rem;
+   background-color: rgb(190, 206, 236);
+   border-radius: 10px;
+   gap: 2rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 20rem;
+   font-family: 'Roboto Mono', monospace;
+}
+.timer-choose{
+display: flex;
+padding: .5rem 1rem;
+gap: 1rem;
+background-color: #000;
+border-radius: 5px;
+
+}
+.div-time{
+    align-self: center;
+}
+.in-decre{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+}
+.time{
+    color: #fff;
+    font-size: 2rem;
+}
+.start-timer,
+.cancel-pomo,
+.restart-pomo{
+    border: none;
+    padding: 0.5rem 1.5rem ;
+    background-color: rgb(143, 195, 211);
+    cursor: pointer;
+}
+
+h1{
+    font-family: 'Belanosima', sans-serif;
+}
+.time-final-minutes,
+.dot,
+.second{
+    font-size: 3rem;
+}
+
+.increase,
+.decrease{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    cursor: pointer;
+}
+i{
+    font-size: 1.2rem;
+}
+
+.btn-cancel-pom{
+    display: none;
+}
+.btn-cancel-pom.appear-btn{
+    display: block;
+}
