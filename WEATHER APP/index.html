@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather app</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <input type="search" class="buscar" placeholder="Enter a city"/>
+            <img src="images/search.png" alt="search-icon" class="search-icon">
+            <div class="error-wrap">
+                <p class="error"></p>
+            </div>
+            
+        </header>
+        <main class="content">
+            <section class="weather">
+                <img src="images/clear.png" alt="clear-icon" class="weather-icon">
+                <span class="weather-descri">Clear</span>
+                <span class="temperature">20°C</span>
+                <span class="city">New York</span>
+                
+            </section>
+            <section class="weather__footer">
+                <div class="humitidy">
+                    <img src="images/humidity.png" alt="humidity-icon" class="icon-weather-footer">
+                    <div class="weather-foot">
+                        <span class="weatherHumidity"></span>
+                        <small>Humidity</small>
+                    </div>
+
+                </div>
+                <div class="wind__speed">
+                    <img src="images/wind.png" alt="wind-icon" class="icon-weather-footer">
+                    <div class="weather-foot">
+                    <span class="windspeed"></span>
+                    <small> Wind Speed</small>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <script src="weatherApp.js"></script>
+</body>
+
+</html>

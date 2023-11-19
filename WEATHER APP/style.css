@@ -1,0 +1,164 @@
+/*Reset*/
+
+/* Box sizing */
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+/* Reset margins */
+body,h1,h2,h3,h4,h5,p,figure,picture {
+    margin: 0; 
+}
+h1,h2,h3,h4,h5,h6,p {
+    font-weight: 100;
+}
+/* make images easier to work with */
+img,picture {
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,button,textarea,select {
+    font: inherit;
+}
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+    color: unset;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:rgb(122, 156, 156) ;
+}
+
+.container{
+    margin: 0 auto;
+    background-color: rgb(122, 156, 156);
+    padding-bottom: 2rem;
+}
+
+.header{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: .5rem;
+    position: relative;
+}
+
+.buscar{
+    padding: .5rem;
+    border-radius: 20px;
+    border: none;
+    width: 70%;
+}
+.buscar:focus{
+    outline: none;
+}
+
+.search-icon{
+    background-color: white;
+    padding: .7rem;
+    border-radius: 50%;
+    width: 2.5rem;
+    height:2.5rem;
+    cursor: pointer;
+}
+.content{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: none;
+}
+
+.weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.weather-icon{
+    width: 10rem;
+}
+
+.weather__footer{
+    margin-top: 2rem;
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-around;
+    opacity: 80%;
+}
+.humitidy,
+.wind__speed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.weather-foot{
+    display: flex;
+    flex-direction: column;
+}
+.icon-weather-footer{
+    width: 3rem;
+}
+.weather-descri{
+    font-size: 1.5rem;
+    color: rgb(238, 214, 194);
+}
+.error-wrap{
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+.error{
+    color: rgb(224, 15, 15);
+    font-weight: 600;
+}
+
+
+.buscar::placeholder{
+    color: rgb(143, 143, 125);
+    padding-left: 1rem;
+    
+}
+
+@media (min-width:600px){
+    body{
+        background-color: #000;
+    }
+    .container{
+        width: 38rem;
+        border-radius: 20px;
+    }
+}
+
