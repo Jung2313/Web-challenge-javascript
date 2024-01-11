@@ -1,4 +1,4 @@
-Hola, he creado este proyecto de Javascript de un Simple Quiz App ()
+Hola, he creado este proyecto de Javascript de un Simple Quiz App 
 
 Lo que el usuario podra hacer
 
@@ -6,4 +6,4 @@ Lo que el usuario podra hacer
 2.- Al final del Quiz se muestra cuantas respuestas fueron correctas
 3.- Hacer el Quiz cuantas veces el usuario desee.
 
-Link para ver el demo:
+Link para ver el demo:https://simplequizap.netlify.app/
