@@ -1,0 +1,32 @@
+ [
+    {
+        "id": "1",
+        "question": "What is the meaning of ‘Hakuna Matata’?",
+        "options": ["Goodnight", "No worries", "Thank you"],
+        "answer": "No worries"
+    },
+    {
+        "id": "2",
+        "question": "What is the largest social media network in the world?",
+        "options": ["X", "Facebook", "Instagram"],
+        "answer": "Facebook"
+    },
+    {
+        "id": "3",
+        "question": "Who is considered the founder of modern computer science?",
+        "options": ["Steve Jobs", "Bill Gates", "Alan Turing"],
+        "answer": "Alan Turing"
+    },
+    {
+        "id": "4",
+        "question": "How many bones does an adult human have?",
+        "options": ["200", "206", "216"],
+        "answer": "206"
+    },
+    {
+        "id": "5",
+        "question": "The only way to do great work is to love what you do",
+        "options": ["Steve Jobs", "Bill Gates", "Mark Zuckerberg"],
+        "answer": "Steve Jobs"
+    }
+]
