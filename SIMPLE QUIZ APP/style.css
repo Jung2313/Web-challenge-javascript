@@ -53,8 +53,9 @@ main{
 .answers:hover{
     background-color: rgb(139, 170, 201); 
 }
-.nextbtn{
-    margin:9px 12rem;
+.nextbtn {
+    margin: 10px auto;
+    
 }
 .next{
     padding: .4rem 1.5rem ;
@@ -110,4 +111,6 @@ main{
     .container{
         width: 30rem;
     }
+   
+    
 }
