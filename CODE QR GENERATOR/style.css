@@ -1,0 +1,95 @@
+/* Box sizing */
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+/* Reset margins */
+body,h1,h2,h3,h4,h5,p,figure,picture {
+    margin: 0; 
+}
+h1,h2,h3,h4,h5,h6,p {
+    font-weight: 100;
+}
+/* make images easier to work with */
+img,picture {
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,button,textarea,select {
+    font: inherit;
+}
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+    color: unset;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background-color: rgb(54, 54, 52);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    width: 90%;
+    box-shadow: 2px 3px 2px 0px rgb(230, 230, 235);
+    background-color: #fff;
+    border-radius: 20px;
+}
+.input-target{
+    padding-block: 3px;
+    border-radius: 10px;
+    border: 0;
+    border: 1px solid rgb(136, 136, 143);
+    outline: none;
+}
+
+.enviar{
+    background-color: rgb(195, 195, 236);
+    padding-block: .3rem;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+
+}
+.qr-code{
+    width: 13rem;
+    height: 13rem;
+    margin: 0 auto;
+    display: none;
+}
+@media (min-width:450px){
+    .container{
+        width: 26rem;
+    }
+}
