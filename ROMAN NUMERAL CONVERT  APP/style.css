@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1b1b33;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+h1 {
+    color: #ffff;
+    font-family: "Rowdies", sans-serif;
+
+}
+
+.container {
+    padding: 2rem;
+}
+
+.container,
+.output-wrap {
+    margin-top: 2rem;
+    background-color: #3a3b4f;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px solid #ffff;
+}
+
+#number {
+    border-radius: 5px;
+    border: 1px solid #d3caca;
+    outline: none;
+    background-color: #1b1b33;
+    height: 3rem;
+    font-size: 20px;
+    color: #ffff;
+    padding-left: 1rem;
+}
+
+label {
+    color: #ffff;
+    font-size: 18px;
+    font-family: "Rowdies", sans-serif;
+}
+
+#convert-btn {
+    background-color: #ffbf43;
+    border: 1px solid;
+    height: 2.5rem;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: "Sniglet", system-ui;
+    cursor: pointer;
+}
+.output-wrap {
+    padding: 1rem;
+}
+.output-wrap.error-message{
+    background-color: #ffaead;
+    border: 1px solid  #76020d;
+}
+
+
+#output {
+    font-size: 1.3rem;
+    font-family: "Sniglet", system-ui;
+}
+
+/*Responsive Design*/
+@media(min-width:600px){
+    body{
+        width: 32rem;
+    }
+}
