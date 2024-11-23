@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --phoneColors: #dfdfe2;
+    --white: #fff;
+
+}
+
+body {
+    background-color: #3b3b4f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    width: 25rem;
+
+}
+
+main {
+    background-color: #000;
+    padding: 1rem;
+    width: 16rem;
+    margin-top: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+header {
+    height: 1.5rem;
+}
+
+.circle-camera {
+    width: .7rem;
+    height: .7rem;
+    margin: 0 auto;
+    border-radius: 50%;
+
+    background-color: var(--phoneColors);
+}
+
+.content {
+    padding: .5rem;
+    background-color: var(--phoneColors);
+
+}
+
+#user-input {
+    width: 100%;
+    margin-block: 1rem;
+    height: 2.4rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+#results-div {
+    width: 95%;
+    height: 16rem;
+    margin: 0 auto;
+    color: rgba(85, 74, 14, 0.89);
+    font-weight: 600;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem;
+}
+
+button {
+    width: 6rem;
+    height: 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-image: linear-gradient(#ffffff, #928d86);
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
